@@ -1,6 +1,4 @@
 - {
-- Hi, I’m @kaamilmubaraq;
-- Currently learning C, C++ and python;
 - You can reach me at email: kaamilmilu@gmail.com;
 - }
 <!---
