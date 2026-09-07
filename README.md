@@ -35,14 +35,6 @@ An open-source Japanese document OCR, translation, and vocabulary workspace.
 - Built with React, FastAPI, PaddleOCR, YomiToku, and Docker.
 - Deployed on [Hugging Face Spaces](https://huggingface.co/spaces/codekmh/GoTranslate).
 
-### Yorin — in development
-
-A mobile night-garden application that visualizes anonymous feelings as fireflies.
-
-- Flutter application with a FastAPI, PostgreSQL, and Redis backend.
-- Anonymous authentication, real-time WebSocket updates, and push notifications.
-- Docker-based development and deployment environment with Caddy and Alembic.
-- Japanese-first bilingual product design.
 
 ## Experience
 
@@ -146,14 +138,6 @@ April 2023 – March 2026
 - React、FastAPI、PaddleOCR、YomiToku、Dockerを使用。
 - [Hugging Face Spaces](https://huggingface.co/spaces/codekmh/GoTranslate)で公開中。
 
-### Yorin — 開発中
-
-匿名の感情を「ほたる」として可視化するモバイルアプリです。
-
-- FlutterとFastAPI、PostgreSQL、Redisで構築。
-- 匿名認証、WebSocketによるリアルタイム更新、プッシュ通知を実装。
-- Docker、Caddy、Alembicを使用した開発・デプロイ基盤を構築。
-- 日本語を中心とした日英対応のプロダクトとして設計。
 
 ## 経験
 
