@@ -39,13 +39,12 @@ A full-stack quotation management and demand forecasting application.
 
 ### [GoTranslate](https://github.com/kaamilmubaraq/GoTranslate)
 
-An open-source Japanese document OCR, translation, and vocabulary workspace.
+An open-source Japanese document OCR, translation and vocabulary workspace. The base version was first built in 2022.
 
-- Extracts Japanese text from digital PDFs, scanned PDFs, and images.
-- Supports translation into six languages and side-by-side document review.
-- Provides vocabulary definitions, readings, duplicate removal, search, and JLPT levels.
-- Built with React, FastAPI, PaddleOCR, YomiToku, and Docker.
-- Deployed on [Hugging Face Spaces](https://huggingface.co/spaces/codekmh/GoTranslate).
+- **Pipeline:** PDF/image upload → embedded text (PyMuPDF) or OCR (PaddleOCR, YomiToku, OpenCV) → tokenisation (fugashi/UniDic, jaconv) → dictionary and JLPT tags (JMdict via jamdict) → translation into 6 languages (deep-translator) → side-by-side review and Word export
+- **Stack:** React 19, FastAPI, Python 3.11, Docker
+- **Testing:** pytest, Jest
+- Deployed on [Hugging Face Spaces](https://huggingface.co/spaces/codekmh/GoTranslate)
 
 
 ## Experience
@@ -130,6 +129,18 @@ April 2023 – March 2026
 
 ## 主なプロジェクト
 
+### [Setload](https://setload.app)：ローカルファーストの筋トレ記録アプリ · [App Store](https://apps.apple.com/app/id6816620446)
+
+英語・日本語対応のiOSアプリ。設計から開発、App Storeでのリリースまで一貫して担当。ソースコードは非公開。
+
+- **モバイル：** React Native（New Architecture）、Expo、TypeScript、Reanimated、Skia
+- **データ：** SQLite、Drizzle ORM、Zustand、ローカルファーストの同期・バックアップ
+- **バックエンド：** FastAPI、SQLModel、PostgreSQL、Redis、Docker
+- **インフラ：** Cloudflare（Tunnel、Access、R2、Pages）、VPS、Astro
+- **サービス：** Sign in with Apple、RevenueCat、StoreKit、Resend、Sentry
+- **テスト・リリース：** Vitest、pytest、Maestro、EAS、App Store Connect API
+- **多言語対応：** i18next（英語・日本語）
+
 ### [QuoteCast](https://github.com/kaamilmubaraq/quotecast)
 
 見積もり管理と需要予測を組み合わせたフルスタックWebアプリです。
@@ -142,12 +153,11 @@ April 2023 – March 2026
 
 ### [GoTranslate](https://github.com/kaamilmubaraq/GoTranslate)
 
-日本語文書のOCR・翻訳・語彙分析を行うオープンソースWebアプリです。
+日本語文書のOCR・翻訳・語彙分析を行うオープンソースWebアプリです。2022年に基礎部分を開発しました。
 
-- デジタルPDF、スキャンPDF、画像から日本語テキストを抽出。
-- 6言語への翻訳と原文・翻訳文の比較表示に対応。
-- 語彙の定義、読み方、重複排除、検索、JLPTレベル表示を実装。
-- React、FastAPI、PaddleOCR、YomiToku、Dockerを使用。
+- **処理の流れ：** PDF・画像のアップロード → 埋め込みテキスト抽出（PyMuPDF）またはOCR（PaddleOCR、YomiToku、OpenCV）→ 形態素解析（fugashi/UniDic、jaconv）→ 辞書・JLPTレベル付与（jamdict/JMdict）→ 6言語への翻訳（deep-translator）→ 原文・翻訳文の比較表示とWord出力
+- **技術スタック：** React 19、FastAPI、Python 3.11、Docker
+- **テスト：** pytest、Jest
 - [Hugging Face Spaces](https://huggingface.co/spaces/codekmh/GoTranslate)で公開中。
 
 
