@@ -14,6 +14,18 @@ idea through implementation, testing, documentation, and deployment.
 
 ## Selected projects
 
+### [Setload](https://setload.app): local-first workout tracker · [App Store](https://apps.apple.com/app/id6816620446)
+
+A bilingual (EN/JA) iOS app, designed, built and shipped end to end. The source is private.
+
+- **Mobile:** React Native (New Architecture), Expo, TypeScript, Reanimated, Skia
+- **Data:** SQLite, Drizzle ORM, Zustand, local-first sync and backup
+- **Backend:** FastAPI, SQLModel, PostgreSQL, Redis, Docker
+- **Infra:** Cloudflare (Tunnel, Access, R2, Pages), VPS, Astro
+- **Services:** Sign in with Apple, RevenueCat, StoreKit, Resend, Sentry
+- **Testing and release:** Vitest, pytest, Maestro, EAS, App Store Connect API
+- **i18n:** i18next (English and Japanese)
+
 ### [QuoteCast](https://github.com/kaamilmubaraq/quotecast)
 
 A full-stack quotation management and demand forecasting application.
